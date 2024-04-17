@@ -9,7 +9,7 @@ body {
     background-repeat: no-repeat;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 568px) {
     body {
         background-size: contain;
         background-position: center center;
