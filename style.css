@@ -9,6 +9,13 @@ body {
     background-repeat: no-repeat;
 }
 
+@media (max-width: 768px) {
+    body {
+        background-size: contain;
+        background-position: center center;
+    }
+}
+
 header {
     background-color: #0073e6;
     color: #ffffff;
