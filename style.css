@@ -7,6 +7,26 @@ body {
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative; /* Dodane dla kontenera body */
+}
+
+body::after {
+    content: '';
+    position: fixed; /* Zmieniono na fixed */
+    top: 20;
+    right: 10px;
+    width: 400px; /* Dopasuj szerokość obrazka */
+    height: 100%;
+    background-image: url('logo/pl2.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    height: 120px;
 }
 
 @media (min-width: 1200px) {

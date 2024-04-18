@@ -18,6 +18,7 @@
             </ul>
         </nav>
     </header>
+    <div id="mapid"></div>
     <section>
         <div class="intro-container">
             <div class="intro-text">
@@ -41,7 +42,7 @@
             });
             document.getElementById('date-time').innerHTML = dateString + '<br>' + timeString;
         }
-        setInterval(updateDateTime, 1000); // Aktualizuje czas co sekundę
+        setInterval(updateDateTime, 1000);
     </script>
 </body>
 </html>
