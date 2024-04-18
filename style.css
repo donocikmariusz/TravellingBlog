@@ -29,25 +29,6 @@ body::after {
     height: 120px;
 }
 
-@media (min-width: 1200px) {
-    body {
-        background-size: cover;
-    }
-}
-
-@media (max-width: 768px) {
-    body {
-        background-size: contain;
-        background-position: center center;
-    }
-}
-
-@media (max-width: 480px) {
-    body {
-        background-size: contain;
-        background-position: center center;
-    }
-}
 
 header {
     background-color: #0073e6;
