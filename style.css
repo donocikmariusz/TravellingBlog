@@ -13,7 +13,7 @@ body {
 body::after {
     content: '';
     position: fixed; /* Zmieniono na fixed */
-    top: 20;
+    top: 287px;
     right: 10px;
     width: 400px; /* Dopasuj szerokość obrazka */
     height: 100%;
