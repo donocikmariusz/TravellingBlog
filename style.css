@@ -1,34 +1,52 @@
-body {
-    font-family: Arial, sans-serif;
+html {
+    height: 100%;
     margin: 0;
     padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     background-image: url('backgrounds/background5.webp');
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative; 
+    position: relative;
+}
+
+body::after,
+body::before {
+    content: '';
+    position: absolute; /* Zmiana z fixed na absolute */
+    top: 0px;
+    width: 135px;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
 }
 
 body::after {
-    content: '';
-    position: fixed;
-    top: 287px; 
     right: 0;
-    width: 400px;
-    height: 100%;
     background-image: url('logo/pl6.webp');
-    background-size: contain;
-    background-repeat: no-repeat;
+}
+
+body::before {
+    left: 0;
+    background-image: url('logo/pl6.webp');
 }
 
 .logo {
     position: absolute;
     right: 5px;
-    top: 0; 
-    height: 120px;
+    top: 0;
+    height: 80px;
 }
-
 
 header {
     background-color: maroon;
@@ -79,18 +97,17 @@ section {
 }
 
 footer {
+    margin-top: auto;
     text-align: center;
-    padding: 10px 0;
+    padding: 0px 0;
     background-color: maroon;
     color: white;
-    position: fixed;
-    bottom: 0;
     width: 100%;
 }
 
 .musala-images img {
-    display: block; /* Sprawia, że obrazek jest traktowany jak blok, co umożliwia centrowanie */
-    margin: 0 auto; /* Centruje obrazek w poziomie */
-    max-width: 50%; /* Maksymalna szerokość obrazka to 80% jego oryginalnej szerokości */
-    height: auto; /* Wysokość jest automatycznie dostosowywana, aby zachować proporcje */
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+    height: auto;
 }
