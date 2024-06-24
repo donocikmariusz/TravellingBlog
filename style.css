@@ -5,9 +5,6 @@ html {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -17,12 +14,15 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 body::after,
 body::before {
     content: '';
-    position: absolute; /* Zmiana z fixed na absolute */
+    position: absolute;
     top: 0px;
     width: 135px;
     height: 100%;
@@ -46,6 +46,28 @@ body::before {
     right: 5px;
     top: 0;
     height: 80px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+main {
+    flex: 3;
+    padding: 20px;
+}
+
+.aside-adjust {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin-top: 30px; 
+    border-radius: 8px;
+    position: sticky;
+    top: 30px;
 }
 
 header {
@@ -84,15 +106,15 @@ nav ul li a {
 }
 
 .date-time {
-    flex-basis: 200px;
     text-align: right;
+    min-width: 200px;
 }
 
 section {
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    margin: 10px;
+    margin: 10px 0;
     padding: 20px;
 }
 
@@ -105,7 +127,58 @@ footer {
     width: 100%;
 }
 
-.musala-images img {
+.flag {
+    width: 100px;
+    height: auto;
+    vertical-align: middle;
+    border: 1px solid black;
+}
+
+.centered {
+    display: flex;
+    align-items: center;
+}
+
+.centered img {
+    margin-right: 10px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.centered a {
+    text-decoration: none;
+}
+
+.centered a span {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+
+.images img {
     display: block;
     margin: 0 auto;
     max-width: 50%;
