@@ -126,14 +126,14 @@ footer {
 
 .flag {
     width: 50px;
-    height: auto;
+    height: auto; /* This should ensure the height adjusts proportionally */
     vertical-align: middle;
     border: 1px solid black;
 }
 
 .kge {
     width: 250px;
-    height: auto;
+    height: auto; /* This should ensure the height adjusts proportionally */
     vertical-align: middle;
     border: 10px solid white;
     border-radius: 10px;
