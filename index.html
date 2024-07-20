@@ -1,33 +1,62 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <title>Blog Podróżniczy</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header-height {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: maroon;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: aliceblue;
+            text-decoration: none;
+        }
+
+        .logo-right {
+            margin-right: 50px;
+            height: 150px;
+        }
+
+        .logo-left {
+            margin-left: 50px;
+            height: 150px
+        }
+    </style>
 </head>
+
 <body>
     <header>
-        <h1>Blog Podróżniczy</h1>
+        <h1>Portal Wyprawowy</h1>
         <nav>
-            <ul>
-                <li><a href="index.html">Strona Główna</a></li>
-                <li><a href="about.html">O Nas</a></li>
-                <li><a href="mountains.html">Góry</a></li>
-                <li><a href="weather.html">Pogoda</a></li>
-                <li><a href="partners.html">Partnerzy</a></li>
-            </ul>
-        </nav>
-    </header> 
-    
-    <div id="mapid"></div>
-    <section>
-        <div class="intro-container">
-            <div class="intro-text">
-                <h2>Witamy na Blogu Podróżniczym!</h2>
-                <p>Tutaj znajdziesz opowieści z naszych podróży po najpiękniejszych zakątkach świata.</p>
-                <b>"Pamiętaj, że szczyt to tylko połowa drogi."</b>
+            <div class="header-height">
+                <img class="logo-right" src="/logo/pl6.webp">
+                <a href="index.html">Strona Główna</a>
+                <a href="about.html">O Nas</a>
+                <a href="mountains.html">Góry</a>
+                <a href="weather.html">Pogoda</a>
+                <a href="partners.html">Partnerzy</a>
+                <img class="logo-left" src="/logo/pl6.webp"></a>
             </div>
-            <div id="date-time" class="date-time"></div>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Witamy na Portalu Wyprawowym!</h2>
+        <p>"Pamiętaj, że każda wyprawa to nie tylko cel, ale przede wszystkim droga do niego."</p>
+        <b>"Pamiętaj, że szczyt to tylko połowa drogi."</b>
+        <div id="date-time" class="date-time"></div>
         </div>
     </section>
     <footer>
@@ -47,4 +76,5 @@
         setInterval(updateDateTime, 1000);
     </script>
 </body>
+
 </html>
