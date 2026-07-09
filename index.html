@@ -6,6 +6,7 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%E2%9B%B0%EF%B8%8F</text></svg>">
     <title>Blog Podróżniczy</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
 </head>
 <body>
     <header>
@@ -21,7 +22,10 @@
         </nav>
     </header> 
     
-    <div id="mapid"></div>
+    <section>
+        <h2>Mapa naszej Korony Gór Europy</h2>
+        <div id="mapid"></div>
+    </section>
     <section>
         <div class="intro-container">
             <div class="intro-text">
@@ -47,6 +51,31 @@
             document.getElementById('date-time').innerHTML = dateString + '<br>' + timeString;
         }
         setInterval(updateDateTime, 1000);
+    </script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+    <script>
+        var szczyty = [
+            { nazwa: 'Musała (Bułgaria) – 2925 m', zdobyty: true, lat: 42.1826, lng: 23.5881, link: 'musala.html' },
+            { nazwa: 'Midżur (Serbia) – 2169 m', zdobyty: true, lat: 43.4029, lng: 22.6656, link: 'midzur.html' },
+            { nazwa: 'Suur Munamägi (Estonia) – 318 m', zdobyty: true, lat: 57.7003, lng: 27.0511, link: 'suurmunamagi.html' },
+            { nazwa: 'Gaiziņkalns (Łotwa) – 312 m', zdobyty: true, lat: 56.8998, lng: 25.9333, link: 'gaizinkalns.html' },
+            { nazwa: 'Aukštojas (Litwa) – 294 m', zdobyty: false, lat: 54.528523, lng: 25.626967, link: 'aukstojas.html' }
+        ];
+
+        var mapa = L.map('mapid');
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 18,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(mapa);
+
+        var znaczniki = szczyty.map(function (szczyt) {
+            var znacznik = L.marker([szczyt.lat, szczyt.lng]).addTo(mapa);
+            var status = szczyt.zdobyty ? '✅ zdobyty' : '❌ nieudany podjazd';
+            znacznik.bindPopup('<b>' + szczyt.nazwa + '</b><br>' + status + '<br><a href="' + szczyt.link + '">zobacz relację</a>');
+            return znacznik;
+        });
+
+        mapa.fitBounds(L.featureGroup(znaczniki).getBounds(), { padding: [30, 30] });
     </script>
 </body>
 </html>
