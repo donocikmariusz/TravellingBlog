@@ -9,33 +9,122 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
 </head>
 <body>
-    <header>
-        <h1>Blog Podróżniczy</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Strona Główna</a></li>
-                <li><a href="about.html">O Nas</a></li>
-                <li><a href="mountains.html">Góry</a></li>
-                <li><a href="weather.html">Pogoda</a></li>
-                <li><a href="partners.html">Partnerzy</a></li>
-            </ul>
-        </nav>
-    </header> 
-    
-    <section>
-        <h2>Mapa naszej Korony Gór Europy</h2>
-        <div id="mapid"></div>
-    </section>
-    <section>
-        <div class="intro-container">
-            <div class="intro-text">
-                <h2>Witamy na Blogu Podróżniczym!</h2>
-                <p>Tutaj znajdziesz opowieści z naszych podróży po najpiękniejszych zakątkach świata.</p>
-                <b>"Pamiętaj, że szczyt to tylko połowa drogi."</b>
+    <header class="site-header">
+        <div class="header-bar">
+            <a class="brand" href="index.html">
+                <img src="logo/pl6.webp" alt="logo" class="brand-logo">
+                <span class="brand-name">Blog Podróżniczy</span>
+            </a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Menu">☰</label>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Strona Główna</a></li>
+                    <li><a href="wpisy.html">Wpisy</a></li>
+                    <li><a href="mountains.html">Góry</a></li>
+                    <li><a href="about.html">O Nas</a></li>
+                    <li><a href="weather.html">Pogoda</a></li>
+                    <li><a href="partners.html">Partnerzy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page">
+        <div class="hero">
+            <h2>Witamy na Blogu Podróżniczym!</h2>
+            <p>Zdobywamy Koronę Gór Europy — najwyższe szczyty wszystkich krajów kontynentu. Tutaj znajdziesz relacje, mapę i listę celów na kolejne wyprawy.</p>
+            <p class="quote">"Pamiętaj, że szczyt to tylko połowa drogi."</p>
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="wpisy.html">Zobacz nasze wpisy</a>
+                <a class="btn btn-secondary" href="mountains.html">Korona Gór Europy</a>
             </div>
             <div id="date-time" class="date-time"></div>
         </div>
-    </section>
+
+        <section>
+            <h2>Nasz postęp</h2>
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-number">4</span>
+                    <span class="stat-label">Zdobyte szczyty</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">1</span>
+                    <span class="stat-label">Nieudana próba</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">4</span>
+                    <span class="stat-label">Odwiedzone kraje</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">46</span>
+                    <span class="stat-label">Szczytów w Koronie Europy</span>
+                </div>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-bar-fill" style="width: 9%;"></div>
+            </div>
+            <p style="text-align:center; color: var(--muted); margin: 0;"><small>4 z 46 szczytów Korony Gór Europy zdobytych — pełną listę celów znajdziesz na stronie <a href="mountains.html">Góry</a>.</small></p>
+        </section>
+
+        <section>
+            <h2>Najnowsze wpisy</h2>
+            <div class="post-grid">
+                <a class="post-card" href="musala.html">
+                    <img class="post-card-img" src="musala/IMG_0511_Easy-Resize.com.jpg" alt="Musała">
+                    <div class="post-card-body">
+                        <div class="post-card-country"><img class="flag" src="img/Flag_of_Bulgaria.svg.png" alt="flaga Bułgarii"> Bułgaria</div>
+                        <h3>Musała — 2925 m n.p.m.</h3>
+                        <p>Wejście na najwyższy szczyt Bułgarii i całych Bałkanów — 12 godzin walki ze śniegiem, wątpliwościami i samym sobą.</p>
+                        <span class="badge done">✅ zdobyty</span>
+                    </div>
+                </a>
+                <a class="post-card" href="midzur.html">
+                    <div class="post-card-img flag-thumb"><img src="img/Flag_of_Serbia.svg.png" alt="flaga Serbii"></div>
+                    <div class="post-card-body">
+                        <div class="post-card-country"><img class="flag" src="img/Flag_of_Serbia.svg.png" alt="flaga Serbii"> Serbia</div>
+                        <h3>Midżur — 2169 m n.p.m.</h3>
+                        <p>Najwyższy szczyt pasma Starej Płaniny, na granicy serbsko-bułgarskiej.</p>
+                        <span class="badge done">✅ zdobyty</span>
+                    </div>
+                </a>
+                <a class="post-card" href="suurmunamagi.html">
+                    <div class="post-card-img flag-thumb"><img src="img/Flag_of_Estonia.svg.png" alt="flaga Estonii"></div>
+                    <div class="post-card-body">
+                        <div class="post-card-country"><img class="flag" src="img/Flag_of_Estonia.svg.png" alt="flaga Estonii"> Estonia</div>
+                        <h3>Suur Munamägi — 318 m n.p.m.</h3>
+                        <p>Najwyższy punkt Estonii i całego regionu bałtyckiego, z wieżą widokową na szczycie.</p>
+                        <span class="badge done">✅ zdobyty</span>
+                    </div>
+                </a>
+                <a class="post-card" href="gaizinkalns.html">
+                    <div class="post-card-img flag-thumb"><img src="img/Flag_of_Latvia.svg.png" alt="flaga Łotwy"></div>
+                    <div class="post-card-body">
+                        <div class="post-card-country"><img class="flag" src="img/Flag_of_Latvia.svg.png" alt="flaga Łotwy"> Łotwa</div>
+                        <h3>Gaiziņkalns — 312 m n.p.m.</h3>
+                        <p>Najwyższy punkt Łotwy w regionie Vidzeme, popularny również jako ośrodek narciarski.</p>
+                        <span class="badge done">✅ zdobyty</span>
+                    </div>
+                </a>
+                <a class="post-card" href="aukstojas.html">
+                    <div class="post-card-img flag-thumb"><img src="img/Flag_of_Lithuania.svg.png" alt="flaga Litwy"></div>
+                    <div class="post-card-body">
+                        <div class="post-card-country"><img class="flag" src="img/Flag_of_Lithuania.svg.png" alt="flaga Litwy"> Litwa</div>
+                        <h3>Aukštojas — 294 m n.p.m.</h3>
+                        <p>Najwyższy punkt Litwy, niedaleko Wilna — podejście, do którego jeszcze wrócimy.</p>
+                        <span class="badge todo">❌ do powtórki</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Mapa naszej Korony Gór Europy</h2>
+            <div id="mapid"></div>
+        </section>
+    </div>
+
     <footer>
         <p>© 2024 Blog Podróżniczy. Wszelkie prawa zastrzeżone.</p>
     </footer>
@@ -50,6 +139,7 @@
             });
             document.getElementById('date-time').innerHTML = dateString + '<br>' + timeString;
         }
+        updateDateTime();
         setInterval(updateDateTime, 1000);
     </script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>

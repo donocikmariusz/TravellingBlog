@@ -8,18 +8,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>O Nas</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Strona Główna</a></li>
-                <li><a href="about.html">O Nas</a></li>
-                <li><a href="mountains.html">Góry</a></li>
-                <li><a href="weather.html">Pogoda</a></li>
-                <li><a href="partners.html">Partnerzy</a></li>
-            </ul>
-        </nav>
+    <header class="site-header">
+        <div class="header-bar">
+            <a class="brand" href="index.html">
+                <img src="logo/pl6.webp" alt="logo" class="brand-logo">
+                <span class="brand-name">Blog Podróżniczy</span>
+            </a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Menu">☰</label>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Strona Główna</a></li>
+                    <li><a href="wpisy.html">Wpisy</a></li>
+                    <li><a href="mountains.html">Góry</a></li>
+                    <li><a href="about.html" class="active">O Nas</a></li>
+                    <li><a href="weather.html">Pogoda</a></li>
+                    <li><a href="partners.html">Partnerzy</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="page-title">
+            <h1>O Nas</h1>
+        </div>
     </header>
+    <div class="page">
     <section>
         <h2>Poznaj nasz zespół!</h2>
         <p>Jesteśmy grupą pasjonatów podróży, którzy chcą dzielić się swoimi doświadczeniami i odkryciami z całego świata. Nasza misja to inspirować innych do odkrywania nowych miejsc i kultur.</p>
@@ -42,8 +54,8 @@
             <li>"Szczęście to droga, nie cel." – anonimowy</li>
             <li>"Z każdym krokiem w górach jesteśmy bliżej siebie." – anonimowy</li>
         </ul>
-   
     </section>
+    </div>
     <footer>
         <p>© 2024 Blog Podróżniczy. Wszelkie prawa zastrzeżone.</p>
     </footer>

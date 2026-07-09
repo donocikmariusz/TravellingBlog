@@ -8,23 +8,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Pogoda</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Strona Główna</a></li>
-                <li><a href="about.html">O Nas</a></li>
-                <li><a href="mountains.html">Góry</a></li>
-                <li><a href="weather.html">Pogoda</a></li>
-                <li><a href="partners.html">Partnerzy</a></li>
-            </ul>
-        </nav>
+    <header class="site-header">
+        <div class="header-bar">
+            <a class="brand" href="index.html">
+                <img src="logo/pl6.webp" alt="logo" class="brand-logo">
+                <span class="brand-name">Blog Podróżniczy</span>
+            </a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Menu">☰</label>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Strona Główna</a></li>
+                    <li><a href="wpisy.html">Wpisy</a></li>
+                    <li><a href="mountains.html">Góry</a></li>
+                    <li><a href="about.html">O Nas</a></li>
+                    <li><a href="weather.html" class="active">Pogoda</a></li>
+                    <li><a href="partners.html">Partnerzy</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="page-title">
+            <h1>Pogoda</h1>
+        </div>
     </header>
+    <div class="page">
     <section>
         <h2>Aktualna Pogoda</h2>
- 
+        <p>Podgląd pogody dla regionu Europy Środkowo-Wschodniej, w którym leży większość zdobytych dotąd szczytów.</p>
         <iframe src="https://embed.windy.com/embed2.html?lat=50.5&lon=22.5&zoom=4&level=surface&overlay=rain&menu=&message=&marker=&calendar=&pressure=&type=map&location=coordinates&detail=&detailLat=50.5&detailLon=22.5&metricWind=default&metricTemp=default&radarRange=-1" width="100%" height="600" frameborder="0"></iframe>
     </section>
+    </div>
     <footer>
         <p>© 2024 Blog Podróżniczy. Wszelkie prawa zastrzeżone.</p>
     </footer>
