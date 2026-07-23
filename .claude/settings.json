@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx playwright *)",
+      "Bash(node -e ' *)",
+      "Bash(node \"C:/Users/Mariusz/AppData/Local/Temp/claude/e--programy-TravellingBlog/9c7c2c76-ca90-461e-846f-9fe2876b0f86/scratchpad/audit.js\")",
+      "Bash(NODE_PATH=\"E:/programy/TravellingBlog/node_modules\" node \"C:/Users/Mariusz/AppData/Local/Temp/claude/e--programy-TravellingBlog/9c7c2c76-ca90-461e-846f-9fe2876b0f86/scratchpad/audit.js\")",
+      "Bash(NODE_PATH=\"E:/programy/TravellingBlog/node_modules\" node \"C:/Users/Mariusz/AppData/Local/Temp/claude/e--programy-TravellingBlog/9c7c2c76-ca90-461e-846f-9fe2876b0f86/scratchpad/shoot.js\")",
+      "Bash(curl -s -o /dev/null -w \"flagcdn: HTTP %{http_code}\\\\n\" --max-time 10 \"https://flagcdn.com/w80/bg.png\")",
+      "Bash(curl -s -o /dev/null -w \"wikimedia: HTTP %{http_code}\\\\n\" --max-time 10 \"https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Bulgaria.svg\")",
+      "Bash(node \"C:/Users/Mariusz/AppData/Local/Temp/claude/e--programy-TravellingBlog/9c7c2c76-ca90-461e-846f-9fe2876b0f86/scratchpad/flags.js\")",
+      "Bash(NODE_PATH=E:/programy/TravellingBlog/node_modules node -e ' *)",
+      "Bash(git commit *)",
+      "Bash([ -f \"$MEM\" ])",
+      "PowerShell(winget uninstall Hugo.Hugo.Extended --disable-interactivity)",
+      "Bash(rm -rf \"C:/Users/Mariusz/AppData/Local/ms-playwright\" *)",
+      "Bash(command -v hugo)",
+      "Bash(gh repo *)",
+      "WebSearch",
+      "Bash(curl -s -o /dev/null -w \"rdap.org:        HTTP %{http_code}\\\\n\" -L --max-time 15 \"https://rdap.org/domain/google.com\")",
+      "Bash(curl -s -o /dev/null -w \"rdap.verisign:   HTTP %{http_code}\\\\n\" -L --max-time 15 \"https://rdap.verisign.com/com/v1/domain/google.com\")",
+      "Bash(curl -s -o /dev/null -w \"rdap.dns.pl:     HTTP %{http_code}\\\\n\" -L --max-time 15 \"https://rdap.dns.pl/domain/nask.pl\")",
+      "Bash(git mv *)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\Mariusz\\AppData\\Local\\ms-playwright"
+    ]
+  }
+}
