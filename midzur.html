@@ -1,141 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%E2%9B%B0%EF%B8%8F</text></svg>">
-    <title>Midżur - Blog Podróżniczy</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog przeniesiony do Go High</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://gohigh.pl/raporty/blog/midzor">
+<meta http-equiv="refresh" content="0; url=https://gohigh.pl/raporty/blog/midzor">
+<script>location.replace("https://gohigh.pl/raporty/blog/midzor");</script>
+<style>
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#e3eff8;color:#0e3550;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;padding:16px;box-sizing:border-box}
+main{max-width:520px;text-align:center}
+a{color:#1a5276;font-weight:700}
+</style>
 </head>
-<body class="background">
-    <header class="site-header">
-        <div class="header-bar">
-            <a class="brand" href="index.html">
-                <img src="logo/pl6.webp" alt="logo" class="brand-logo">
-                <span class="brand-name">Blog Podróżniczy</span>
-            </a>
-            <input type="checkbox" id="nav-toggle" class="nav-toggle">
-            <label for="nav-toggle" class="nav-toggle-label" aria-label="Menu">☰</label>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Strona Główna</a></li>
-                    <li><a href="wpisy.html" class="active">Wpisy</a></li>
-                    <li><a href="mountains.html">Góry</a></li>
-                    <li><a href="about.html">O Nas</a></li>
-                    <li><a href="weather.html">Pogoda</a></li>
-                    <li><a href="partners.html">Partnerzy</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <div class="page">
-        <div class="peak-hero">
-            <h1>Midżur — 2169 m n.p.m.</h1>
-            <div class="peak-hero-meta">
-                <img src="img/Flag_of_Serbia.svg.png" class="flag" alt="flaga Serbii">
-                <span>Serbia · Stara Płanina</span>
-                <span>·</span>
-                <span>15 lipca 2022</span>
-                <span class="status-badge done">✅ zdobyty</span>
-            </div>
-        </div>
-
-        <section>
-            <div class="stats stats-trip">
-                <div class="stat">
-                    <span class="stat-number">2169</span>
-                    <span class="stat-label">metrów n.p.m.</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">25.</span>
-                    <span class="stat-label">na liście KGE</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">2022</span>
-                    <span class="stat-label">rok wejścia</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">✅</span>
-                    <span class="stat-label">zdobyty</span>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <p>Midżur (serb. Midžor / Миџор) to najwyższy szczyt pasma Starej Płaniny (Bałkanów właściwych), leżący dokładnie na granicy serbsko-bułgarskiej, w pobliżu wsi Dojkinci po stronie serbskiej. Osiąga wysokość 2169 metrów n.p.m. i jest uznawany za najwyższy punkt Serbii (z pominięciem spornego terytorium Kosowa, gdzie leży wyższy Đeravica, 2656 m).</p>
-            <p>Okolice szczytu należą do Parku Przyrody Stara Płanina, obejmującego rozległe, mało zaludnione tereny górskie o bogatej florze i faunie, w tym populacje niedźwiedzi i wilków. Szlaki na Midżur prowadzą zwykle przez łąki i połoniny, bez trudności technicznych, co czyni go dostępnym celem dla turystyki pieszej przez większość roku.</p>
-        </section>
-
-        <section>
-            <h2>Dodatkowe informacje</h2>
-            <table class="fact-table">
-                <tr>
-                    <th>Overview</th>
-                    <td>Midžor is the highest peak of the Stara Planina (Balkan) range, straddling the Serbia-Bulgaria border and regarded as mainland Serbia's high point.</td>
-                </tr>
-                <tr>
-                    <th>Wysokość</th>
-                    <td>2169 metrów (wg części źródeł 2168 m), 7116 stóp</td>
-                </tr>
-                <tr>
-                    <th>Szerokość/Długość geograficzna (WGS84)</th>
-                    <td>43.40° N, 22.67° E (Dec Deg)</td>
-                </tr>
-                <tr>
-                    <th>Kraj</th>
-                    <td>Serbia / Bułgaria (granica)</td>
-                </tr>
-                <tr>
-                    <th>Stan/Region</th>
-                    <td>Okręg Pirot (Serbia), Park Przyrody Stara Płanina</td>
-                </tr>
-                <tr>
-                    <th>Nasze wejście</th>
-                    <td>15 lipca 2022</td>
-                </tr>
-            </table>
-        </section>
-
-        <section>
-            <h2>Mapa i źródła</h2>
-            <div class="trip-links">
-                <a class="link-card" href="https://maps.google.com/?q=43.4029,22.6656" target="_blank" rel="noopener">
-                    <span class="link-title">Lokalizacja szczytu</span>
-                    <span class="link-sub">43.4029, 22.6656 · Google Maps</span>
-                </a>
-                <a class="link-card" href="https://en.wikipedia.org/wiki/Mid%C5%BEor" target="_blank" rel="noopener">
-                    <span class="link-title">Wikipedia</span>
-                    <span class="link-sub">Hasło encyklopedyczne o szczycie</span>
-                </a>
-                <a class="link-card" href="https://www.google.com/search?q=Mid%C5%BEor" target="_blank" rel="noopener">
-                    <span class="link-title">Szukaj w Google</span>
-                    <span class="link-sub">Zdjęcia, relacje i opisy szlaków</span>
-                </a>
-                <a class="link-card" href="https://www.bing.com/search?q=Mid%C5%BEor" target="_blank" rel="noopener">
-                    <span class="link-title">Szukaj w Bing</span>
-                    <span class="link-sub">Alternatywne wyniki wyszukiwania</span>
-                </a>
-            </div>
-        </section>
-
-        <section>
-            <h2>Zobacz też</h2>
-            <div class="trip-links">
-                <a class="link-card" href="mountains.html">
-                    <span class="link-title">Korona Gór Europy</span>
-                    <span class="link-sub">Pełna lista 46 szczytów i nasze postępy</span>
-                </a>
-                <a class="link-card" href="musala.html">
-                    <span class="link-title">Musała — 2925 m</span>
-                    <span class="link-sub">Relacja z wejścia na najwyższy szczyt Bałkanów</span>
-                </a>
-            </div>
-        </section>
-    </div>
-
-    <footer>
-        <p>© 2024 Blog Podróżniczy. Wszelkie prawa zastrzeżone.</p>
-    </footer>
+<body>
+<main>
+<p>Blog podróżniczy przeniósł się do Go High.</p>
+<p><a href="https://gohigh.pl/raporty/blog/midzor">gohigh.pl/raporty/blog/midzor</a></p>
+</main>
 </body>
 </html>

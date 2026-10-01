@@ -1,145 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%E2%9B%B0%EF%B8%8F</text></svg>">
-    <title>Suur Munamägi - Blog Podróżniczy</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog przeniesiony do Go High</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://gohigh.pl/raporty/blog/suur-munamagi">
+<meta http-equiv="refresh" content="0; url=https://gohigh.pl/raporty/blog/suur-munamagi">
+<script>location.replace("https://gohigh.pl/raporty/blog/suur-munamagi");</script>
+<style>
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#e3eff8;color:#0e3550;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;padding:16px;box-sizing:border-box}
+main{max-width:520px;text-align:center}
+a{color:#1a5276;font-weight:700}
+</style>
 </head>
-<body class="background">
-    <header class="site-header">
-        <div class="header-bar">
-            <a class="brand" href="index.html">
-                <img src="logo/pl6.webp" alt="logo" class="brand-logo">
-                <span class="brand-name">Blog Podróżniczy</span>
-            </a>
-            <input type="checkbox" id="nav-toggle" class="nav-toggle">
-            <label for="nav-toggle" class="nav-toggle-label" aria-label="Menu">☰</label>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Strona Główna</a></li>
-                    <li><a href="wpisy.html" class="active">Wpisy</a></li>
-                    <li><a href="mountains.html">Góry</a></li>
-                    <li><a href="about.html">O Nas</a></li>
-                    <li><a href="weather.html">Pogoda</a></li>
-                    <li><a href="partners.html">Partnerzy</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <div class="page">
-        <div class="peak-hero">
-            <h1>Suur Munamägi — 318 m n.p.m.</h1>
-            <div class="peak-hero-meta">
-                <img src="img/Flag_of_Estonia.svg.png" class="flag" alt="flaga Estonii">
-                <span>Estonia · Wyżyna Haanja</span>
-                <span>·</span>
-                <span>23 sierpnia 2022</span>
-                <span class="status-badge done">✅ zdobyty</span>
-            </div>
-        </div>
-
-        <section>
-            <div class="stats stats-trip">
-                <div class="stat">
-                    <span class="stat-number">318</span>
-                    <span class="stat-label">metrów n.p.m.</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">7.</span>
-                    <span class="stat-label">na liście KGE</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">2022</span>
-                    <span class="stat-label">rok wejścia</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">✅</span>
-                    <span class="stat-label">zdobyty</span>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <p>Suur Munamägi („Wielka Jajowa Góra") to najwyższy punkt Estonii i całego regionu bałtyckiego, osiągający wysokość 317,4 metra n.p.m. Wzniesienie leży na Wyżynie Haanja (Haanja Parish), w hrabstwie Võru, w malowniczym, pagórkowatym zakątku południowo-wschodniej Estonii, niedaleko granicy z Łotwą i Rosją.</p>
-            <p>Na szczycie stoi drewniana wieża widokowa (Suure Munamäe vaatetorn), wzniesiona pierwotnie w 1939 roku i wielokrotnie odnawiana. Przy dobrej pogodzie z jej tarasu widokowego można dostrzec tereny sięgające Łotwy i Rosji. To popularny cel wycieczek rodzinnych oraz jeden z symboli estońskiej turystyki krajoznawczej.</p>
-        </section>
-
-        <section>
-            <h2>Dodatkowe informacje</h2>
-            <table class="fact-table">
-                <tr>
-                    <th>Overview</th>
-                    <td>Suur Munamägi is the highest point of Estonia and of the entire Baltic region, topped by an observation tower on the Haanja Upland.</td>
-                </tr>
-                <tr>
-                    <th>Wysokość</th>
-                    <td>318 metrów (317,4 m), 1043 stopy</td>
-                </tr>
-                <tr>
-                    <th>Szerokość/Długość geograficzna (WGS84)</th>
-                    <td>57.70° N, 27.05° E (Dec Deg)</td>
-                </tr>
-                <tr>
-                    <th>Kraj</th>
-                    <td>Estonia (Najwyższy Punkt)</td>
-                </tr>
-                <tr>
-                    <th>Stan/Region</th>
-                    <td>Hrabstwo Võru, Wyżyna Haanja</td>
-                </tr>
-                <tr>
-                    <th>Na szczycie</th>
-                    <td>Wieża widokowa Suure Munamäe vaatetorn (1939, wielokrotnie odnawiana)</td>
-                </tr>
-                <tr>
-                    <th>Nasze wejście</th>
-                    <td>23 sierpnia 2022</td>
-                </tr>
-            </table>
-        </section>
-
-        <section>
-            <h2>Mapa i źródła</h2>
-            <div class="trip-links">
-                <a class="link-card" href="https://maps.google.com/?q=57.7003,27.0511" target="_blank" rel="noopener">
-                    <span class="link-title">Lokalizacja szczytu</span>
-                    <span class="link-sub">57.7003, 27.0511 · Google Maps</span>
-                </a>
-                <a class="link-card" href="https://en.wikipedia.org/wiki/Suur_Munam%C3%A4gi" target="_blank" rel="noopener">
-                    <span class="link-title">Wikipedia</span>
-                    <span class="link-sub">Hasło encyklopedyczne o szczycie</span>
-                </a>
-                <a class="link-card" href="https://www.google.com/search?q=Suur+Munam%C3%A4gi" target="_blank" rel="noopener">
-                    <span class="link-title">Szukaj w Google</span>
-                    <span class="link-sub">Zdjęcia, relacje i opisy szlaków</span>
-                </a>
-                <a class="link-card" href="https://www.bing.com/search?q=Suur+Munam%C3%A4gi" target="_blank" rel="noopener">
-                    <span class="link-title">Szukaj w Bing</span>
-                    <span class="link-sub">Alternatywne wyniki wyszukiwania</span>
-                </a>
-            </div>
-        </section>
-
-        <section>
-            <h2>Zobacz też</h2>
-            <div class="trip-links">
-                <a class="link-card" href="mountains.html">
-                    <span class="link-title">Korona Gór Europy</span>
-                    <span class="link-sub">Pełna lista 46 szczytów i nasze postępy</span>
-                </a>
-                <a class="link-card" href="gaizinkalns.html">
-                    <span class="link-title">Gaiziņkalns — 312 m</span>
-                    <span class="link-sub">Najwyższy punkt sąsiedniej Łotwy</span>
-                </a>
-            </div>
-        </section>
-    </div>
-
-    <footer>
-        <p>© 2024 Blog Podróżniczy. Wszelkie prawa zastrzeżone.</p>
-    </footer>
+<body>
+<main>
+<p>Blog podróżniczy przeniósł się do Go High.</p>
+<p><a href="https://gohigh.pl/raporty/blog/suur-munamagi">gohigh.pl/raporty/blog/suur-munamagi</a></p>
+</main>
 </body>
 </html>

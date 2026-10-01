@@ -1,138 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%E2%9B%B0%EF%B8%8F</text></svg>">
-    <title>O Nas - Blog Podróżniczy</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog przeniesiony do Go High</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://gohigh.pl/">
+<meta http-equiv="refresh" content="0; url=https://gohigh.pl/">
+<script>location.replace("https://gohigh.pl/");</script>
+<style>
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#e3eff8;color:#0e3550;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;padding:16px;box-sizing:border-box}
+main{max-width:520px;text-align:center}
+a{color:#1a5276;font-weight:700}
+</style>
 </head>
 <body>
-    <header class="site-header">
-        <div class="header-bar">
-            <a class="brand" href="index.html">
-                <img src="logo/pl6.webp" alt="logo" class="brand-logo">
-                <span class="brand-name">Blog Podróżniczy</span>
-            </a>
-            <input type="checkbox" id="nav-toggle" class="nav-toggle">
-            <label for="nav-toggle" class="nav-toggle-label" aria-label="Menu">☰</label>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Strona Główna</a></li>
-                    <li><a href="wpisy.html">Wpisy</a></li>
-                    <li><a href="mountains.html">Góry</a></li>
-                    <li><a href="about.html" class="active">O Nas</a></li>
-                    <li><a href="weather.html">Pogoda</a></li>
-                    <li><a href="partners.html">Partnerzy</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <div class="page">
-    <div class="page-head">
-        <h1>O Nas</h1>
-        <p>Jesteśmy dwuosobową ekipą pasjonatów podróży, którzy chcą dzielić się swoimi doświadczeniami i odkryciami z całego świata. Nasza misja to inspirować innych do odkrywania nowych miejsc i kultur, w drodze po Koronę Gór Europy.</p>
-    </div>
-
-    <section>
-        <h2>Kto zdobywa szczyty</h2>
-        <p>Uzupełnij poniższe pola swoimi danymi — to miejsce na krótkie wizytówki obojga uczestników wypraw.</p>
-        <div class="team-grid">
-            <div class="team-card">
-                <div class="team-avatar">🧗</div>
-                <h3>[Imię i nazwisko]</h3>
-                <p class="team-role">[np. Lider wyprawy / Nawigator]</p>
-                <dl>
-                    <dt>Ulubiony zdobyty szczyt</dt>
-                    <dd>[Uzupełnij]</dd>
-                    <dt>Liczba zdobytych szczytów</dt>
-                    <dd>[Uzupełnij]</dd>
-                    <dt>Motto</dt>
-                    <dd>[Uzupełnij]</dd>
-                </dl>
-            </div>
-            <div class="team-card">
-                <div class="team-avatar">🧗</div>
-                <h3>[Imię i nazwisko]</h3>
-                <p class="team-role">[np. Fotograf / Kronikarz]</p>
-                <dl>
-                    <dt>Ulubiony zdobyty szczyt</dt>
-                    <dd>[Uzupełnij]</dd>
-                    <dt>Liczba zdobytych szczytów</dt>
-                    <dd>[Uzupełnij]</dd>
-                    <dt>Motto</dt>
-                    <dd>[Uzupełnij]</dd>
-                </dl>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <h2>Co nas napędza</h2>
-
-        <blockquote class="quote-feature">
-            <p>Nie mierzymy gór, lecz siebie.</p>
-            <cite>Sir Edmund Hillary</cite>
-        </blockquote>
-
-        <div class="quote-grid">
-            <blockquote class="quote-card">
-                <p>Góry wzywają, a ja muszę iść.</p>
-                <cite>John Muir</cite>
-            </blockquote>
-            <blockquote class="quote-card">
-                <p>Góry są nie tylko piękne, ale i niezbędne.</p>
-                <cite>John Muir</cite>
-            </blockquote>
-            <blockquote class="quote-card">
-                <p>Wspinaczka jest wolnością.</p>
-                <cite>Lynn Hill</cite>
-            </blockquote>
-            <blockquote class="quote-card">
-                <p>Największe wyprawy zaczynają się od jednego kroku.</p>
-                <cite>Laozi</cite>
-            </blockquote>
-            <blockquote class="quote-card">
-                <p>Góry uczą nas pokory przed naturą i samymi sobą.</p>
-            </blockquote>
-            <blockquote class="quote-card">
-                <p>Każdy szczyt jest w zasięgu, jeśli tylko trzymasz kurs.</p>
-            </blockquote>
-            <blockquote class="quote-card">
-                <p>Podążaj za swoją ścieżką i szanuj każdy krok.</p>
-            </blockquote>
-            <blockquote class="quote-card">
-                <p>W górach odkrywasz siłę, o której nie wiedziałeś, że ją masz.</p>
-            </blockquote>
-            <blockquote class="quote-card">
-                <p>Nie idziemy, aby uciec od życia, ale aby życie nam nie uciekło.</p>
-            </blockquote>
-            <blockquote class="quote-card">
-                <p>Czas spędzony w górach nie jest nigdy stracony.</p>
-            </blockquote>
-            <blockquote class="quote-card">
-                <p>Góry są terenem prób naszego ducha.</p>
-            </blockquote>
-            <blockquote class="quote-card">
-                <p>Najpiękniejsze widoki wymagają najtrudniejszych wspinaczek.</p>
-            </blockquote>
-            <blockquote class="quote-card">
-                <p>W górach odnajdujemy ciszę, której szuka nasza dusza.</p>
-            </blockquote>
-            <blockquote class="quote-card">
-                <p>Góry przywracają nasze poczucie cudu.</p>
-            </blockquote>
-            <blockquote class="quote-card">
-                <p>Szczęście to droga, nie cel.</p>
-            </blockquote>
-            <blockquote class="quote-card">
-                <p>Z każdym krokiem w górach jesteśmy bliżej siebie.</p>
-            </blockquote>
-        </div>
-    </section>
-    </div>
-    <footer>
-        <p>© 2024 Blog Podróżniczy. Wszelkie prawa zastrzeżone.</p>
-    </footer>
+<main>
+<p>Blog podróżniczy przeniósł się do Go High.</p>
+<p><a href="https://gohigh.pl/">gohigh.pl/</a></p>
+</main>
 </body>
 </html>
