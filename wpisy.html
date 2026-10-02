@@ -1,23 +1,142 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pl">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Blog przeniesiony do Go High</title>
-<meta name="robots" content="noindex">
-<link rel="canonical" href="https://gohigh.pl/raporty">
-<meta http-equiv="refresh" content="0; url=https://gohigh.pl/raporty">
-<script>location.replace("https://gohigh.pl/raporty");</script>
-<style>
-body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#e3eff8;color:#0e3550;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;padding:16px;box-sizing:border-box}
-main{max-width:520px;text-align:center}
-a{color:#1a5276;font-weight:700}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%E2%9B%B0%EF%B8%8F</text></svg>">
+    <title>Wpisy - Blog Podróżniczy</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
-<p>Blog podróżniczy przeniósł się do Go High.</p>
-<p><a href="https://gohigh.pl/raporty">gohigh.pl/raporty</a></p>
-</main>
+    <header class="site-header">
+        <div class="header-bar">
+            <a class="brand" href="index.html">
+                <img src="logo/pl6.webp" alt="logo" class="brand-logo">
+                <span class="brand-name">Blog Podróżniczy</span>
+            </a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Menu">☰</label>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Strona Główna</a></li>
+                    <li><a href="wpisy.html" class="active">Wpisy</a></li>
+                    <li><a href="mountains.html">Góry</a></li>
+                    <li><a href="about.html">O Nas</a></li>
+                    <li><a href="weather.html">Pogoda</a></li>
+                    <li><a href="partners.html">Partnerzy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page">
+        <div class="page-head">
+            <h1>Wpisy</h1>
+            <p>Chronologiczny przegląd naszych podejść na najwyższe szczyty krajów Europy w ramach wyzwania Korona Gór Europy.</p>
+        </div>
+        <section>
+            <div class="entry-list">
+                <a class="entry-row" href="musala.html">
+                    <div class="entry-thumb">
+                        <img class="entry-photo" src="musala/IMG_0791_Easy-Resize.com.jpg" alt="Zaśnieżony szlak w górach Riła">
+                    </div>
+                    <div class="entry-body">
+                        <div class="entry-meta">
+                            <img class="flag" src="img/Flag_of_Bulgaria.svg.png" alt="flaga Bułgarii">
+                            <span>Bułgaria</span>
+                            <span>·</span>
+                            <span>12.04.2024</span>
+                            <span>·</span>
+                            <span>2925 m n.p.m.</span>
+                        </div>
+                        <h3>Musała — najwyższy szczyt Bałkanów</h3>
+                        <p>12 godzin zmagań ze śniegiem, zwątpieniem i własnymi granicami — pełna relacja krok po kroku, ze zdjęciami z całej trasy.</p>
+                        <div class="entry-foot"><span class="badge done">✅ zdobyty</span></div>
+                    </div>
+                </a>
+                <a class="entry-row" href="midzur.html">
+                    <div class="entry-thumb is-flag">
+                        <img src="img/Flag_of_Serbia.svg.png" alt="flaga Serbii">
+                    </div>
+                    <div class="entry-body">
+                        <div class="entry-meta">
+                            <img class="flag" src="img/Flag_of_Serbia.svg.png" alt="flaga Serbii">
+                            <span>Serbia</span>
+                            <span>·</span>
+                            <span>15.07.2022</span>
+                            <span>·</span>
+                            <span>2169 m n.p.m.</span>
+                        </div>
+                        <h3>Midżur — szczyt na granicy dwóch krajów</h3>
+                        <p>Najwyższy szczyt pasma Starej Płaniny, dokładnie na granicy serbsko-bułgarskiej, otoczony Parkiem Przyrody Stara Płanina.</p>
+                        <div class="entry-foot"><span class="badge done">✅ zdobyty</span></div>
+                    </div>
+                </a>
+                <a class="entry-row" href="suurmunamagi.html">
+                    <div class="entry-thumb is-flag">
+                        <img src="img/Flag_of_Estonia.svg.png" alt="flaga Estonii">
+                    </div>
+                    <div class="entry-body">
+                        <div class="entry-meta">
+                            <img class="flag" src="img/Flag_of_Estonia.svg.png" alt="flaga Estonii">
+                            <span>Estonia</span>
+                            <span>·</span>
+                            <span>23.08.2022</span>
+                            <span>·</span>
+                            <span>318 m n.p.m.</span>
+                        </div>
+                        <h3>Suur Munamägi — dach krajów bałtyckich</h3>
+                        <p>Najwyższy punkt Estonii i całego regionu bałtyckiego, z charakterystyczną drewnianą wieżą widokową na szczycie.</p>
+                        <div class="entry-foot"><span class="badge done">✅ zdobyty</span></div>
+                    </div>
+                </a>
+                <a class="entry-row" href="gaizinkalns.html">
+                    <div class="entry-thumb is-flag">
+                        <img src="img/Flag_of_Latvia.svg.png" alt="flaga Łotwy">
+                    </div>
+                    <div class="entry-body">
+                        <div class="entry-meta">
+                            <img class="flag" src="img/Flag_of_Latvia.svg.png" alt="flaga Łotwy">
+                            <span>Łotwa</span>
+                            <span>·</span>
+                            <span>05.09.2022</span>
+                            <span>·</span>
+                            <span>312 m n.p.m.</span>
+                        </div>
+                        <h3>Gaiziņkalns — szczyt, który zimą jest stokiem</h3>
+                        <p>Najwyższy punkt Łotwy w regionie Vidzeme — poza sezonem turystycznym to również popularny ośrodek narciarski.</p>
+                        <div class="entry-foot"><span class="badge done">✅ zdobyty</span></div>
+                    </div>
+                </a>
+                <a class="entry-row" href="aukstojas.html">
+                    <div class="entry-thumb is-flag">
+                        <img src="img/Flag_of_Lithuania.svg.png" alt="flaga Litwy">
+                    </div>
+                    <div class="entry-body">
+                        <div class="entry-meta">
+                            <img class="flag" src="img/Flag_of_Lithuania.svg.png" alt="flaga Litwy">
+                            <span>Litwa</span>
+                            <span>·</span>
+                            <span>19.10.2022</span>
+                            <span>·</span>
+                            <span>294 m n.p.m.</span>
+                        </div>
+                        <h3>Aukštojas — komplet szczytów bałtyckich</h3>
+                        <p>Najwyższy punkt Litwy niedaleko Wilna, z wieżą widokową na szczycie. Domknięcie trójki Estonia–Łotwa–Litwa.</p>
+                        <div class="entry-foot"><span class="badge done">✅ zdobyty</span></div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Kolejne cele</h2>
+            <p>Pozostałe 41 szczytów Korony Gór Europy czeka na swoją kolej. Pełną listę z wysokościami i statusem znajdziesz na stronie <a href="mountains.html">Góry</a>.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 Blog Podróżniczy. Wszelkie prawa zastrzeżone.</p>
+    </footer>
 </body>
 </html>
